@@ -7,7 +7,7 @@ Hi there, I'm Boris. I'm an entrepreneur and [angel investor][1] who loves to bu
 
 I am a proud Canadian who grew up in Paris and now lives in San Francisco.
 
-I previously founded [Meldium][], a [YC-backed][YC] security startup, which was acquired by [LogMeIn][].
+I founded [Meldium][], a [YC-backed][YC] security startup, which was acquired by [LogMeIn][].
 
 I speak about technology and love to help startup founders, so [reach out](mailto:bjabes@gmail.com) ([public key][2]).
 
