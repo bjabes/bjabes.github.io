@@ -1,6 +1,6 @@
 ---
-title: Bjabes.Github.Io
-timezone: UTC
+title: Boris Jabes
+timezone: America/Los_Angeles
 collections:
   posts:
     title: Posts
@@ -8,5 +8,4 @@ collections:
   uploads:
     title: Uploads
     output: true
-name: Boris Jabes
 markdown: kramdown
