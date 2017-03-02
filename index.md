@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Boris' Home Page
+layout: page
 ---
 
 Hi there, I'm Boris. I'm an entrepreneur and [angel investor][1] who loves to build software.
