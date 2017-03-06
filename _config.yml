@@ -1,7 +1,5 @@
 ---
 title: Boris Jabes
-author: Boris Jabes
-email: bjabes@gmail.com
 timezone: America/Los_Angeles
 collections:
   posts:
@@ -10,4 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
+author: Boris Jabes
+email: bjabes@gmail.com
 markdown: kramdown
