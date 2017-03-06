@@ -1,0 +1,21 @@
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: calc(6px + 1.2vw + 1.2vh);
+  padding: 2.7182818285%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
+}
+
+footer::before,
+header::after {
+  content: '--';
+  display: block;
+}
