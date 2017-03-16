@@ -9,7 +9,7 @@ I am a proud Canadian who grew up in Paris and now lives in San Francisco.
 
 I founded [Meldium][], a [YC-backed][YC] security startup, which was acquired by [LogMeIn][].
 
-I speak about technology and love to help startup founders, so [reach out][email] ([public key][2]).
+I enjoy speaking about technology and love to help startup founders, so please [reach out][email] ([public key][2]).
 
 I moonlight as an amateur tour guide if you're visiting.
 
