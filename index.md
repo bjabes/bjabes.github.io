@@ -3,7 +3,7 @@ title: Boris' Home Page
 layout: default
 ---
 
-Hi there, I'm Boris. I'm an entrepreneur and [angel investor][1] who runs [Polynome][], a tech consultancy.
+Hi there, I'm [Boris](https://borisjabes.keybase.pub/profile.jpg). I'm an entrepreneur and [angel investor][1] who runs [Polynome][], a tech consultancy.
 
 I am a proud Canadian who grew up in Paris and now lives in San Francisco.
 
