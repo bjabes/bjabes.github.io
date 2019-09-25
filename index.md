@@ -3,7 +3,7 @@ title: Boris' Home Page
 layout: default
 ---
 
-Hi there, I'm [Boris](https://borisjabes.keybase.pub/profile.jpg). I'm an entrepreneur and [angel investor][1] who runs [Census][], a service that helps businesses better understand their customers.
+Hi there, I'm [Boris][profile-photo]. I'm an entrepreneur and [angel investor][1] who runs [Census][], a service that helps businesses better understand their customers.
 
 I am a proud Canadian who grew up in Paris and now lives in San Francisco.
 
@@ -29,3 +29,4 @@ Someday, I hope to recreate the magic of [HyperCard][].
 [Polynome]: http://polynome.co
 [email]: mailto:{{ site.email }}
 [HyperCard]: https://wikipedia.org/wiki/HyperCard
+[profile-photo]: https://borisjabes.keybase.pub/profile-2018.jpg
