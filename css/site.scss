@@ -2,6 +2,8 @@
 ---
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
+$link-color: cornflowerblue;
+
 body {
   font-family: 'Space Mono', monospace;
   font-size: calc(10px + 1vw + 0.7vh);
@@ -16,7 +18,7 @@ p {
 }
 
 a {
-  color: cornflowerblue;
+  color: $link-color;
   text-decoration-line: none;
   &:hover {
     text-decoration-line: underline;
