@@ -1,15 +1,15 @@
 ---
 title: Boris' Home Page
-layout: default
+layout: about
 ---
 
-Hi there, I'm [Boris][profile-photo]. I'm the founder and CEO of [Census][], a service that helps companies sync customer data across business systems.
+Hi there, I'm Boris. I'm the founder and CEO of [Census][], a service that helps companies sync customer data across business systems.
 
 Previously I founded Meldium, a [YC-backed][YC] password manager for teams, which was acquired by [LogMeIn][].
 
-I love to help other startup founders and sometimes [angel invest][1] so please [reach out][email] ([public key][2]).
+I enjoy speaking about technology, helping other startup founders, and [angel investing][1].
 
-I am a proud Canadian who grew up in Paris and now lives in San Francisco. I moonlight as an amateur tour guide if you're visiting.
+I grew up in Canada & France before eventually moving to the US. Before settling in San Francisco, I lived in Seattle & Pittsburgh. I moonlight as an amateur tour guide if you're visiting.
 
 Someday, I hope to recreate the magic of [HyperCard][].
 
