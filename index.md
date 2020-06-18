@@ -26,5 +26,5 @@ Someday, I hope to recreate the magic of [HyperCard][].
 [Census]: https://getcensus.com
 [Polynome]: http://polynome.co
 [email]: mailto:{{ site.email }}
-[HyperCard]: https://wikipedia.org/wiki/HyperCard
-[profile-photo]: https://borisjabes.keybase.pub/profile-2018.jpg
+[HyperCard]: <https://wikipedia.org/wiki/HyperCard>
+[profile-photo]: <https://borisjabes.keybase.pub/profile-2018.jpg>
