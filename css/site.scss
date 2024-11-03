@@ -1,10 +1,11 @@
 ---
 ---
 
+@use "sass:color";
 $link-color: cornflowerblue;
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: calc(6px + 0.9vw + 0.9vh);
   padding: 2.7182818285%;
   margin: 0 auto;
@@ -42,8 +43,9 @@ a {
   }
 }
 
-footer::before, header::after {
-  content: '--';
+footer::before,
+header::after {
+  content: "--";
   display: block;
 }
 
@@ -54,7 +56,7 @@ footer::before, header::after {
     color: #e4e4e4;
   }
   a {
-    color: lighten($link-color, 10%);
+    color: color.adjust($link-color, $lightness: 10%);
   }
   img {
     filter: grayscale(30%);
