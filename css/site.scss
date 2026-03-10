@@ -6,7 +6,7 @@ $link-color: cornflowerblue;
 
 body {
   font-family: "Space Mono", monospace;
-  font-size: calc(6px + 0.9vw + 0.9vh);
+  font-size: clamp(1rem, 1vw + 0.8rem, 2rem);
   padding: 2.7182818285%;
   margin: 0 auto;
   max-width: 1260px;
