@@ -3,13 +3,13 @@ title: Boris' Home Page
 layout: about
 ---
 
-Hi there, I'm Boris. I'm the founder and CEO of [Census][], a service that helps companies sync customer data across business systems.
+Hi there, I'm Boris. I'm currently a visiting partner at [Y Combinator][YC] helping new founders build amazing companies.
 
-Previously I founded Meldium, a [YC-backed][YC] password manager for teams, which was acquired by [LogMeIn][].
+Previously I was the co-founder and CEO of [Census][], a data activation platform that syncs data from data warehouses into business tools, which was acquired by [Fivetran][]. Before that, I founded Meldium, a password manager for teams, which was acquired by [LogMeIn][].
 
-I enjoy speaking about technology, helping other startup founders, and [angel investing][1].
+Along the way I've invested in startups including Rippling, Fal, Hex, Orb, Felt, Graphite, Statsig, Modal Labs, Ashby, Nitra, and Zed.
 
-I grew up in Canada & France before eventually moving to the US. Before settling in San Francisco, I lived in Seattle & Pittsburgh. I moonlight as an amateur tour guide if you're visiting.
+I grew up in Canada & France before eventually moving to the US for graduate school. These days, I split my time between San Francisco and New York. I moonlight as an amateur tour guide if you're visiting.
 
 Someday, I hope to recreate the magic of [HyperCard][].
 
@@ -23,6 +23,7 @@ Someday, I hope to recreate the magic of [HyperCard][].
 [8]: http://goodreads.com/borisjabes
 [YC]: https://www.ycombinator.com
 [LogMeIn]: https://www.logmeininc.com
+[Fivetran]: https://www.fivetran.com/data-movement/activations
 [Census]: https://getcensus.com
 [Polynome]: http://polynome.co
 [email]: mailto:{{ site.email }}
