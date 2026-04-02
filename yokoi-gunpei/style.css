@@ -70,7 +70,7 @@ a:hover { color: var(--color-link-hover); text-decoration: underline; }
 
 /* Chapter content */
 h1 { font-size: var(--size-h1); margin-bottom: var(--space-xs); }
-h2 { font-size: var(--size-h2); margin-top: var(--space-xl); margin-bottom: var(--space-md); }
+h2 { font-size: var(--size-h2); margin-top: var(--space-xs); margin-bottom: var(--space-md); }
 
 .chapter-meta {
   font-family: var(--font-mono);
@@ -85,7 +85,6 @@ h2 { font-size: var(--size-h2); margin-top: var(--space-xl); margin-bottom: var(
 }
 .reading-body p {
   margin-bottom: 0.8em;
-  text-indent: 1.5em;
 }
 .reading-body p:first-child,
 .reading-body p.image-note,
@@ -99,6 +98,25 @@ h2 { font-size: var(--size-h2); margin-top: var(--space-xl); margin-bottom: var(
   background: var(--color-surface);
   border-left: 3px solid var(--color-border);
   text-indent: 0 !important;
+}
+blockquote.yokoi-voice {
+  border-left: 3px solid #b8a07a;
+  margin: var(--space-lg) 0;
+  padding: var(--space-sm) 0 var(--space-sm) var(--space-lg);
+}
+blockquote.yokoi-voice p {
+  text-indent: 0;
+  margin-bottom: 0.8em;
+}
+h2.section-subhead {
+  font-size: 1.5em;
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+h3.section-subhead {
+  font-size: 1.15em;
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
 }
 
 /* Page reference — floats in right margin alongside text */
@@ -165,26 +183,37 @@ h2 { font-size: var(--size-h2); margin-top: var(--space-xl); margin-bottom: var(
 
 .hero {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   align-items: center;
   margin-bottom: var(--space-xl);
   padding: var(--space-xl) 0;
 }
 .hero-image {
   flex-shrink: 0;
-  width: 200px;
+  width: 220px;
 }
 .hero-image img {
   width: 100%;
   height: auto;
   border: 1px solid var(--color-border);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  transform: rotate(-2deg);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border-radius: 3px;
 }
 .hero-text { flex: 1; }
-.hero h1 { font-size: 2.2rem; margin-bottom: var(--space-sm); }
-.hero-hook {
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-xs);
+  line-height: 1.2;
+}
+.hero-subtitle {
   font-size: 1.15rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  text-indent: 0;
+  font-style: italic;
+}
+.hero-author {
+  font-size: var(--size-small);
   color: var(--color-muted);
   margin-bottom: var(--space-lg);
   text-indent: 0;
