@@ -12,7 +12,7 @@
   <a href="index.html" class="home-link">Gunpei Yokoi Game Museum</a>
 </header>
 <nav class="chapter-nav">
-  <a href="chapter-5.html" class="nav-prev">&larr; Chapter 5</a>
+  <a href="chapter-6.html" class="nav-prev">&larr; Afterword</a>
   <a href="index.html" class="nav-home">Contents</a>
   <span class="nav-next"></span>
 </nav>
@@ -23,29 +23,99 @@
 
 <div class="reading-body">
 <p>This translation was created as a personal project to make an important piece of gaming
-history accessible to English readers.</p>
+history accessible to English readers. <em>Gunpei Yokoi Game Museum</em> has never been
+officially translated into English, despite being one of the most insightful primary sources
+on Nintendo's creative philosophy. This project set out to change that, using a multi-stage
+AI-assisted pipeline designed to produce a translation that reads like natural English while
+staying faithful to the original Japanese.</p>
 
-<p><strong>The process:</strong> The original book was scanned as a PDF. Each page was sent
-to Claude's vision API (claude-sonnet-4-6), which read the Japanese text directly from the
-page image and produced an English translation. The entire book (231 content pages)
-was translated page-by-page with context from the previous page to maintain continuity.</p>
+<h2>The Pipeline</h2>
 
-<p><strong>Total cost:</strong> approximately $10.89 in API costs.</p>
+<p>The translation was not a single pass. It was built through four distinct stages, each
+addressing a different dimension of quality. The idea was to treat AI not as a replacement
+for editorial judgment, but as a tireless first-draft engine that could be iteratively
+refined.</p>
 
-<p><strong>Quality note:</strong> This is an AI-assisted translation, not a professional
-human translation. While Claude produces remarkably natural English, there may be errors,
-especially with idiomatic expressions, wordplay, or cultural references. If you spot
-an error, contributions and corrections are welcome.</p>
+<h3>Stage 1: Vision-Based Draft Translation</h3>
 
-<p><strong>The tools:</strong> Python, PyMuPDF for page extraction, the Anthropic API for
-translation, and a custom static site generator for this reading experience.</p>
+<p>The original Chikuma Bunko paperback was scanned as a PDF. Rather than relying on OCR
+to extract text (which struggles with Japanese vertical typesetting), each page image was
+sent directly to Claude's vision API (claude-sonnet-4-6). The model read the Japanese
+text from the page image and produced an English translation in a single pass.</p>
 
-<p>If you found this useful, share it. The more people who can read Yokoi's story, the better.</p>
+<p>To maintain narrative flow across page breaks, each page was translated with the
+previous page's translation included as context. This prevented the model from losing
+track of mid-sentence breaks, ongoing dialogue, or thematic threads. The entire book
+(231 content pages) was processed this way, with each page's translation
+cached as a JSON file for reproducibility.</p>
+
+<p>The system was designed to handle edge cases automatically: if a page produced a
+suspiciously short response (suggesting the model couldn't read the image), it
+retried at a higher DPI. Rate limits and API errors triggered exponential backoff
+with automatic retries.</p>
+
+<h3>Stage 2: Expert Revision Pass</h3>
+
+<p>The initial Sonnet drafts were competent but sometimes literal. A second pass sent
+every page to Claude Opus (claude-opus-4-6) — a more capable and expensive model — with
+three inputs: the original page image, the extracted Japanese text from the PDF, and the
+existing English draft. The revision prompt instructed the model to act as an expert
+Japanese-to-English literary translator, aggressively correcting mistranslations,
+omissions, awkward phrasing, and OCR artifacts while preserving the page's structure
+and information.</p>
+
+<p>This stage was the most expensive part of the pipeline, but it made the biggest
+difference in quality. Where Sonnet might produce a correct but stiff translation,
+Opus would reshape sentences into prose that felt written, not translated.</p>
+
+<h3>Stage 3: English Editorial Review</h3>
+
+<p>The third stage was a pure English-language editorial pass. A separate AI reviewer
+read each chapter as assembled continuous prose — without access to the Japanese source —
+and flagged issues a native English reader would notice: translation-ese, repetitive
+word choices, inconsistent terminology, unclear antecedents, and tonal shifts.</p>
+
+<p>The reviewer produced structured find-and-replace edits with categories (phrasing,
+word-choice, consistency, clarity, flow, tone) and explanations. These edits were
+validated programmatically to ensure every "find" string actually appeared in the
+text, with fuzzy matching to recover near-misses caused by whitespace or quote
+normalization differences.</p>
+
+<h3>Stage 4: Glossary Standardization</h3>
+
+<p>A canonical glossary was built to enforce consistency across the entire book. Key
+decisions included always using English name order (Gunpei Yokoi, not Yokoi Gunpei),
+standardizing Yokoi's famous philosophy as "Lateral Thinking with Seasoned Technology"
+(not "Withered Technology," a common mistranslation), and maintaining consistent terms
+like "Idea Toys" and "Light Gun" throughout. The glossary was applied as automated
+regex replacements across all pages, catching any variants the editorial pass missed.</p>
+
+<h2>Quality Note</h2>
+
+<p>This is an AI-assisted translation, not a professional human translation. The
+multi-stage pipeline produces remarkably natural English, but there may be errors —
+especially with idiomatic expressions, wordplay, or cultural references that require
+deep contextual knowledge. The interview sections, where Yokoi speaks in his own voice,
+were particularly challenging: the goal was to preserve his conversational, sometimes
+meandering style without making him sound stilted or overly polished.</p>
+
+<p>If you spot an error, contributions and corrections are welcome.</p>
+
+<h2>The Tools</h2>
+
+<p>The entire pipeline is built in Python. PyMuPDF handles PDF page extraction and
+image rendering. The Anthropic API powers every translation and review stage. A custom
+static site generator produces this reading experience, complete with page-image
+thumbnails in the margins, a lightbox viewer, and chapter navigation. The total API
+cost for translating and refining the entire book was approximately $10.89.</p>
+
+<p>If you found this useful, share it. The more people who can read Yokoi's story,
+the better.</p>
 </div>
 
 </main>
 <nav class="chapter-nav">
-  <a href="chapter-5.html" class="nav-prev">&larr; Chapter 5</a>
+  <a href="chapter-6.html" class="nav-prev">&larr; Afterword</a>
   <a href="index.html" class="nav-home">Contents</a>
   <span class="nav-next"></span>
 </nav>
