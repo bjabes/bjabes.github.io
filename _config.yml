@@ -11,3 +11,5 @@ collections:
 author: Boris Jabes
 email: bjabes@gmail.com
 markdown: kramdown
+plugins:
+  - jekyll-redirect-from
