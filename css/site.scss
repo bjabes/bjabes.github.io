@@ -20,6 +20,7 @@ p {
 a {
   color: $link-color;
   text-decoration-line: none;
+  transition: color 0.15s ease;
   &:hover {
     text-decoration-line: underline;
   }
@@ -36,6 +37,8 @@ a {
     width: 4em;
     height: 4em;
     margin-right: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .social-links {
@@ -43,10 +46,24 @@ a {
   }
 }
 
-footer::before,
-header::after {
+footer::before {
   content: "--";
   display: block;
+}
+
+.about-name {
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+}
+
+.about-projects {
+  margin-top: 2rem;
+  font-size: 0.85em;
+  &::before {
+    content: "--";
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }
 
 // inspired by https://tombrow.com/dark-mode-website-css

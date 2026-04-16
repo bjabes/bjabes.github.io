@@ -9,9 +9,17 @@
 
   <title>{{ page.title }}</title>
 
-  <!-- minimal CSS reset -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css" />
+  <!-- OpenGraph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="Boris Jabes — builder, investor, amateur tour guide.">
+  <meta property="og:image" content="https://borisjabes.com/boris-profile-sep-2018.jpg">
+  <meta property="og:url" content="https://borisjabes.com{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>--</text></svg>">
+
+  <link rel="stylesheet" href="/css/minireset.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap">
   <link rel="stylesheet" href="/css/site.css" />
 
