@@ -312,6 +312,9 @@ h3.section-subhead {
   color: var(--color-muted);
   text-indent: 0;
 }
+.colophon-text + .colophon-text {
+  margin-top: 0.45rem;
+}
 
 /* Footnotes */
 .footnote-ref a {
